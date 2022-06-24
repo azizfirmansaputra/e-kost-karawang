@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LLRootFavorite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:orientation="vertical"
+    tools:context=".Beranda.Favorite.ActivityFavorite">
+
+    <TextView
+        android:id="@+id/txtPetunjukFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/geser_kiri_untuk_menghapus_favorit"
+        android:textSize="12sp"
+        android:textColor="@color/text"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SRLListFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RVKostFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLFavoriteKosong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_box"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bordirbutton"
+            android:text="@string/belum_ada_favorit"
+            android:textColor="@color/putih"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LLRootKelolaKost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Profil.KelolaKost.ActivityKelolaKost">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/lengkapi_data_kost_milik_anda"
+        android:textColor="@color/textTebal"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/abuabu"/>
+
+    <TextView
+        android:id="@+id/txtDataKostError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/error"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/SVDataKost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/view_data_umum_kost"
+                layout="@layout/view_data_umum_kost"/>
+
+            <include
+                android:id="@+id/view_foto_video_kost"
+                layout="@layout/view_foto_video_kost"/>
+
+            <include
+                android:id="@+id/view_lokasi_kost"
+                layout="@layout/view_lokasi_kost"/>
+
+            <include
+                android:id="@+id/view_fasilitas_bersama"
+                layout="@layout/view_fasilitas_bersama"/>
+
+            <include
+                android:id="@+id/view_fasilitas_sekitar"
+                layout="@layout/view_fasilitas_sekitar"/>
+
+            <include
+                android:id="@+id/view_dekat_dengan"
+                layout="@layout/view_dekat_dengan"/>
+
+            <Button
+                android:id="@+id/btnSimpanDataKost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bordirbutton"
+                android:text="@string/simpan_data_kost"
+                android:textColor="@color/putih"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

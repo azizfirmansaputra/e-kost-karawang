@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgListKost"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_image"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:id="@+id/LLListVideoKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/imgListKost"
+        android:layout_alignTop="@id/imgListKost"
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:background="@color/hitam_transparan">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/icon_video"
+            tools:ignore="ContentDescription"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

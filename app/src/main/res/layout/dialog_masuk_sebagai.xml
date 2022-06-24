@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/bgDialog"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/masuk_sebagai"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/pilih_salah_satu"
+                android:textColor="@color/textKecil"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnPencariKost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bordirbutton"
+                    android:text="@string/pencari_kost"
+                    android:textColor="@color/putih"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    tools:ignore="ButtonStyle"/>
+
+                <Button
+                    android:id="@+id/btnPemilikKost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bordirbutton"
+                    android:text="@string/pemilik_kost"
+                    android:textColor="@color/putih"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    tools:ignore="ButtonStyle"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:orientation="vertical"
+    tools:context=".Beranda.FragmentBeranda">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_logoekostputih"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/imgFavorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_favorite"
+            tools:ignore="ContentDescription"/>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SRLBeranda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/SVBeranda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/bg_toolbarcurveatas"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CVCariLokasiKost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardBackgroundColor="@color/putih"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/txtCariLokasiKost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:hint="@string/lokasi_terdekat_atau_nama_kost"
+                                android:inputType="text"
+                                android:imeOptions="actionSearch"
+                                android:singleLine="true"
+                                android:drawableStart="@drawable/icon_lokasi"
+                                android:background="@drawable/bordireditteks"
+                                android:drawablePadding="8dp"
+                                android:padding="10dp"
+                                android:textCursorDrawable="@drawable/bg_cursor"
+                                android:textColor="@color/warnaText"
+                                android:autofillHints=""/>
+
+                            <Button
+                                android:id="@+id/btnCariLokasiKost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/bordirbutton"
+                                android:text="@string/cari_kost"
+                                android:textColor="@color/putih"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtListKostTerdekatDari"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="@string/lihat_kost_terdekat_dari"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/abuabu"/>
+
+                    <LinearLayout
+                        android:id="@+id/LLKostTerdekatDari"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <Button
+                            android:id="@+id/btnKIIC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordireditteks"
+                            android:text="@string/kiic"
+                            android:textColor="@color/hitam"
+                            tools:ignore="ButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/btnSuryaCipta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordireditteks"
+                            android:text="@string/surya_cipta"
+                            android:textColor="@color/hitam"
+                            tools:ignore="ButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/btnMitraKarawang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordireditteks"
+                            android:text="@string/mitra_karawang"
+                            android:textColor="@color/hitam"
+                            tools:ignore="ButtonStyle"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RVKostBeranda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        tools:ignore="NestedScrolling"/>
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/SFLListKostBeranda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <include layout="@layout/shimmer_list_kost"/>
+
+                            <include layout="@layout/shimmer_list_kost"/>
+
+                        </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/RLKostTidakAda"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_box"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="180dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/bordirbutton"
+                            android:text="@string/kost_tidak_di_temukan"
+                            android:textColor="@color/putih"
+                            android:textSize="25sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

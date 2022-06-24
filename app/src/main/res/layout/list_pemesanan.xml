@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/putih"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/LLListPemesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CVListPemesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="250dp">
+
+                    <ImageView
+                        android:id="@+id/imgListPemesanan"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_fotoprofil"
+                        tools:ignore="ContentDescription"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtListNomorPemesanan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/kost1234567890"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/txtListTanggalMasukPemesanan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/senin_5_juli_2021"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtListNamaKostPemesanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama_kostan"
+                        android:textSize="20sp"
+                        android:textColor="@color/text"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtListAlamatKostPemesanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alamat_kost_lengkap"
+                        android:textSize="15sp"
+                        android:textColor="@color/text"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="o"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/abuabu"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtListStatusPembayaran"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menunggu_pembayaran"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtListHargaKostPemesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rp_000_000"
+                    android:textSize="15sp"
+                    android:textColor="@color/text"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

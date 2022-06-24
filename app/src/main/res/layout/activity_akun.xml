@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Profil.Akun.ActivityAkun">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarUbahProfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/ubah_profil"
+                    android:textSize="18sp"
+                    android:textColor="@color/putih"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/IBSimpanUbahProfil"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_ceklis_satu"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/putih"
+                    tools:ignore="ContentDescription"/>
+
+                <ProgressBar
+                    android:id="@+id/PBSimpanUbahProfil"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/putih"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/CIVFotoProfilAkun"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_fotoprofil"
+                    android:transitionName="FotoProfilAkun"
+                    tools:ignore="ContentDescription"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/CIVFotoProfilAkun"
+                    android:layout_alignEnd="@+id/CIVFotoProfilAkun"
+                    android:layout_alignBottom="@+id/CIVFotoProfilAkun"
+                    android:background="@color/abuabu"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ubah_foto"
+                    android:textColor="@color/putih"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/abuabu"/>
+
+            <LinearLayout
+                android:id="@+id/LLNamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/nama_lengkap"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/txtNamaLengkapAkun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"
+                    android:text="@string/nama_lengkap"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtUbahNamaLengkapAkun"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/nama_lengkap"
+                    android:backgroundTint="@color/abuabu"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@drawable/bg_cursor"
+                    android:visibility="gone"
+                    tools:ignore="Autofill"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/abuabu"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/email_akun"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/txtEmailAkun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/email_akun"
+                    android:textColor="@color/text"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/abuabu"/>
+
+            <LinearLayout
+                android:id="@+id/LLNomorTeleponAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/handphone"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/txtNomorTeleponAkun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"
+                    android:text="@string/handphone"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtUbahNomorTeleponAkun"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/handphone"
+                    android:backgroundTint="@color/abuabu"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@drawable/bg_cursor"
+                    android:visibility="gone"
+                    tools:ignore="Autofill"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/abuabu"/>
+
+            <LinearLayout
+                android:id="@+id/LLJenisKelaminAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/jenis_kelamin_"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/txtJenisKelaminAkun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"
+                    android:text="@string/jenis_kelamin_"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerJenisKelaminAkun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:backgroundTint="@color/abuabu"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/abuabu"/>
+
+            <LinearLayout
+                android:id="@+id/LLPasswordAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ubah_password"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/tiga_panah"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/abuabu"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

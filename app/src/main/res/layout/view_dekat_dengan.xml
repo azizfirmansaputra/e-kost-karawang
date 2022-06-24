@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/dekat_dengan"
+        android:textSize="15sp"
+        android:textColor="@color/text"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/outline"
+            app:hintTextAppearance="@style/HintTextStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtDekatDengan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:inputType="text"
+                android:lines="1"
+                android:hint="@string/misal_masjid_dll"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textCursorDrawable="@drawable/bg_cursor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnTambahDekatDengan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_plus"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <com.aplikasi_ekostkarawang.Lain.CustomGridView
+        android:id="@+id/GVDekatDengan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:nestedScrollingEnabled="true"/>
+
+</LinearLayout>

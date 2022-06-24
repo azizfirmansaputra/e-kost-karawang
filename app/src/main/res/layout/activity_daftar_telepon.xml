@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Profil.DaftarTelepon.ActivityDaftarTelepon">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarNomorTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/daftar_nomor_telepon"
+                android:textSize="18sp"
+                android:textColor="@color/putih"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/txtJudulDaftarNoTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/masukkan_nomor_telepon_disini"
+        android:textColor="@color/textTebal"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtDaftarNoTeleponError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/error"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/LLDaftarNoTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:enabled="false"
+            android:lines="1"
+            android:background="@drawable/bordireditteks"
+            android:text="@string/_62"
+            android:textColor="@color/warnaText"
+            android:textSize="17sp"
+            android:textCursorDrawable="@drawable/bg_cursor"
+            tools:ignore="Autofill,LabelFor"/>
+
+        <EditText
+            android:id="@+id/txtDaftarNoTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:padding="10dp"
+            android:inputType="phone|textNoSuggestions"
+            android:maxLength="15"
+            android:lines="1"
+            android:background="@drawable/bordireditteks"
+            android:hint="@string/xxx_xxxx_xxxx"
+            android:textColor="@color/warnaText"
+            android:textSize="17sp"
+            android:textCursorDrawable="@drawable/bg_cursor"
+            tools:ignore="Autofill"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnKirimOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bordirbutton"
+        android:text="@string/kirim"
+        android:textColor="@color/putih"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/LLKodeOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtKodeOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:inputType="number|textNoSuggestions"
+            android:maxLength="11"
+            android:lines="1"
+            android:background="@drawable/bordireditteks"
+            android:hint="@string/underscore"
+            android:textColor="@color/warnaText"
+            android:textSize="70sp"
+            android:textCursorDrawable="@drawable/bg_cursor"
+            tools:ignore="Autofill"/>
+
+        <TextView
+            android:id="@+id/txtCountdownOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="end"
+            android:text="@string/_01_00"
+            android:textColor="@color/textTebal"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/LLDaftarDataNoTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/outline"
+                app:hintTextAppearance="@style/HintTextStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDaftarNamaLengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="text"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' "
+                    android:lines="1"
+                    android:hint="@string/nama_lengkap"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@drawable/bg_cursor"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/outline"
+                app:hintTextAppearance="@style/HintTextStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDaftarEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:hint="@string/alamat_email"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@drawable/bg_cursor"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/outline"
+                app:hintTextAppearance="@style/HintTextStyle"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDaftarPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="textPassword|textNoSuggestions"
+                    android:lines="1"
+                    android:hint="@string/password"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@drawable/bg_cursor"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/outline"
+                app:hintTextAppearance="@style/HintTextStyle"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDaftarKonfirmasiPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="textPassword|textNoSuggestions"
+                    android:lines="1"
+                    android:hint="@string/konfirmasi_password"
+                    android:textColor="@color/text"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@drawable/bg_cursor"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/RGDaftarJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jenis_kelamin"
+                    android:textSize="15sp"
+                    android:textColor="@color/text"
+                    android:textStyle="normal"/>
+
+                <RadioButton
+                    android:id="@+id/RBDaftarLakiLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/laki_laki"
+                    android:textSize="15sp"
+                    android:textColor="@color/text"/>
+
+                <RadioButton
+                    android:id="@+id/RBDaftarPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/perempuan"
+                    android:textSize="15sp"
+                    android:textColor="@color/text"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnDaftarNoTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bordirbutton"
+                android:text="@string/simpan_profil"
+                android:textColor="@color/putih"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

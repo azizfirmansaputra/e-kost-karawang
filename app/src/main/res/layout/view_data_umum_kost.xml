@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/data_umum_kost"
+        android:textSize="15sp"
+        android:textColor="@color/text"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/outline"
+        app:hintTextAppearance="@style/HintTextStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDataNamaKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:inputType="text"
+            android:lines="1"
+            android:hint="@string/nama_kostan"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/bg_cursor"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/outline"
+        app:hintTextAppearance="@style/HintTextStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDataDeskripsiKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:inputType="text|textMultiLine"
+            android:hint="@string/deskripsi_kost"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/bg_cursor"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/outline"
+        app:hintTextAppearance="@style/HintTextStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDataPeraturanKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:inputType="text|textMultiLine"
+            android:hint="@string/peraturan_kost"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/bg_cursor"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bordiroutlinespinner">
+
+        <Spinner
+            android:id="@+id/spinnerDataMayoritasPenghuni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/bg_cursor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/outline"
+            app:hintTextAppearance="@style/HintTextStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtKostPerhari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perhari"
+                android:inputType="number"
+                android:lines="1"
+                android:paddingBottom="15dp"
+                android:textColor="@color/text"
+                android:textCursorDrawable="@drawable/bg_cursor"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/outline"
+            app:hintTextAppearance="@style/HintTextStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtKostPerbulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:inputType="number"
+                android:lines="1"
+                android:hint="@string/perbulan"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textCursorDrawable="@drawable/bg_cursor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/outline"
+            app:hintTextAppearance="@style/HintTextStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtKostPertahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:inputType="number"
+                android:lines="1"
+                android:hint="@string/pertahun"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textCursorDrawable="@drawable/bg_cursor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/outline"
+            app:hintTextAppearance="@style/HintTextStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNamaKamarKost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:inputType="text"
+                android:maxLength="3"
+                android:hint="@string/nama_kamar_kost"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textCursorDrawable="@drawable/bg_cursor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/RBNamaKamarTerisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/terisi"
+                android:textColor="@color/text"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/RBNamaKamarKosong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kosong"
+                android:textColor="@color/text"
+                android:textSize="15sp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnTambahNamaKamar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_plus"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <com.aplikasi_ekostkarawang.Lain.CustomGridView
+        android:id="@+id/GVNamaKamarKost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:nestedScrollingEnabled="true"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CIVFotoPengirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtTampilPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_pengirim"
+            android:padding="8dp"
+            android:text="@string/pesan"
+            android:textColor="@color/putih"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/txtTampilPesan"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgCeklisPesan"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/icon_ceklis_satu"
+                android:tint="@color/abuabu"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/txtWaktuPesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/_00_00"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

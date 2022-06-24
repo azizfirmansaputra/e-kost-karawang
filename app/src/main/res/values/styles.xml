@@ -1,0 +1,65 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TemaSplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="CustomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bounce</item>
+        <item name="android:windowExitAnimation">@anim/bounce</item>
+    </style>
+
+    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowEnterAnimation">@anim/bounce</item>
+        <item name="android:windowExitAnimation">@anim/bounce</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Button</item>
+        <item name="android:tint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CropActivity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="MetodePembayaran" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBar" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/putih</item>
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+</resources>

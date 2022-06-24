@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtJudulPilihAlasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/pilih_alasan_pembatalan"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/abuabu"/>
+
+            <RadioGroup
+                android:id="@+id/RGAlasanBatalkan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/RBAlasanSatu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/kamar_tidak_sesuai"
+                    android:textColor="@color/textTebal"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/RBAlasanDua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/fasilitas_tidak_sesuai"
+                    android:textColor="@color/textTebal"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/RBAlasanTiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/tidak_sesuai_deskripsi"
+                    android:textColor="@color/textTebal"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/RBAlasanLainnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/alasan_lainnya"
+                    android:textColor="@color/textTebal"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/txtAlasanLainnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textMultiLine|text"
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/bordireditteks"
+                    android:hint="@string/alasan_anda"
+                    android:textColor="@color/warnaText"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textCursorDrawable="@drawable/bg_cursor"
+                    tools:ignore="Autofill"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnKonfirmasiBatalkan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/bordirbutton"
+                android:text="@string/konfirmasi"
+                android:textColor="@color/putih"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

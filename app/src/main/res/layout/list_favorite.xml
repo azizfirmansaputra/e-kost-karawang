@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/LLListFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/imgFotoProfilListFavorite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_fotoprofil"
+                    tools:ignore="ContentDescription"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNamaAkunListFavorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/nama_lengkap"
+                    android:textColor="@color/textTebal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtEmailAkunListFavorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/ekostkarawang_gmail_com"
+                    android:textColor="@color/abuabu"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

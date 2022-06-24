@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:orientation="vertical"
+    tools:context=".Pemesanan.ActivityPemesanan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/putih"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPemesanan"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_fotoprofil"
+                    tools:ignore="ContentDescription"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNamaKostPemesanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama_kostan"
+                        android:textSize="20sp"
+                        android:textColor="@color/text"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtDeskripsiKostPemesanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deskripsi_kost"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtAlamatKostPemesanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alamat_kost_lengkap"
+                        android:textSize="15sp"
+                        android:textColor="@color/text"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="o"/>
+
+                    <TextView
+                        android:id="@+id/txtLihatPetaPemesanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lihat_di_peta"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/putih"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nomor_pemesanan"
+                    android:textSize="12sp"
+                    android:textColor="@color/abuabu"/>
+
+                <TextView
+                    android:id="@+id/txtNomorPemesanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kost1234567890"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/nama_pemesan_kost"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtNamaPemesan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama_lengkap"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LLTanggalMasukPemesanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tanggal_masuk"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtTanggalMasukPemesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/senin_5_juli_2021"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/status_pemesanan"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtStatusPembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menunggu_pembayaran"
+                        android:textSize="15sp"
+                        android:textColor="@color/text"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/putih"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/LLMetodePembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/metode_pembayaran"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtMetodePembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/bank_mandiri"
+                        android:textColor="@color/text"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LLNomorPembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/nomor_pembayaran"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtNomorPembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bm123456789"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sewa_kost_per"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtSewaPerPemesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bulan"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/nama_kamar"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtNamaKamarPemesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a1"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/harga_kost"
+                        android:textSize="12sp"
+                        android:textColor="@color/abuabu"/>
+
+                    <TextView
+                        android:id="@+id/txtHargaKostPemesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rp_000_000"
+                        android:textSize="15sp"
+                        android:textColor="@color/text"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LLPetunjukPembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:background="@color/outline">
+
+                    <TextView
+                        android:id="@+id/txtPetunjukPembayaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:background="?attr/selectableItemBackground"
+                        android:text="@string/petunjuk_pembayaran"
+                        android:textSize="12sp"
+                        android:textColor="@color/kuning"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="o"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnChatPemilikKostPemesanan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bordiroutline"
+            android:text="@string/chat_pemilik_kost"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnLihatKostSelengkapnya"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bordiroutline"
+            android:text="@string/lihat_kost_selengkapnya"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnBatalkanPemesanan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bordiroutline"
+            android:text="@string/batalkan"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>

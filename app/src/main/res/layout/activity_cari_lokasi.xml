@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:orientation="vertical"
+    tools:context=".Beranda.ActivityCariLokasi">
+
+    <AutoCompleteTextView
+        android:id="@+id/txtCariLokasiKost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lokasi_terdekat_atau_nama_kost"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:drawableStart="@drawable/icon_lokasi"
+        android:background="@drawable/bordireditteks"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:textCursorDrawable="@drawable/bg_cursor"
+        android:textColor="@color/warnaText"
+        android:transitionName="Lokasi"
+        android:autofillHints=""/>
+
+    <Button
+        android:id="@+id/btnKostDekatLokasiSaya"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/icon_lokasiku"
+        android:drawablePadding="3dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/cari_kost_dekat_lokasi_saya"
+        android:textColor="@color/textKecil"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

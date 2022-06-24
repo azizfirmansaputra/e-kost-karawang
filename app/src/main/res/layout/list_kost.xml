@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/putih"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/LLListKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtListNamaKost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nama_kostan"
+                    android:textSize="15sp"
+                    android:textColor="@color/text"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtListJarakKost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0_km"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtListAlamatKost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alamat_kost_lengkap"
+                android:textSize="12sp"
+                android:textColor="@color/text"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVListMediaKost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"/>
+
+            <Button
+                android:id="@+id/btnSelengkapnya"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:padding="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/selengkapnya"
+                android:textColor="@color/hitam"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Profil.KelolaKost.ActivityKelolaKost1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarKelolaKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/Kelola_Kost"
+                    android:textSize="18sp"
+                    android:textColor="@color/putih"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/IBKelolaKost"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_plus"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/putih"
+                    tools:ignore="ContentDescription"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLTambahDataKost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgBelumAdaKost"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_box"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_alignBottom="@+id/imgBelumAdaKost"
+            android:padding="3dp"
+            android:background="@drawable/bordirbutton"
+            android:text="@string/belum_ada_kost"
+            android:textColor="@color/putih"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layoutKelolaKost"
+        layout="@layout/activity_selengkapnya"/>
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/bgDialog"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtJudulDaftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/mendaftar_pemilik_kost"
+                android:textColor="@color/textTebal"
+                android:textSize="23sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/LLDaftarTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:background="@drawable/bordirbuttonoutline"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_call"
+                    android:backgroundTint="@color/warnaIcon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/gunakan_nomor_telepon"
+                    android:textColor="@color/warnaTextButton"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLDaftarGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:background="@drawable/bordirbuttonoutline"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_google"
+                    android:backgroundTint="@color/warnaIcon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/lanjutkan_dengan_google"
+                    android:textColor="@color/warnaTextButton"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLMasuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMasukError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="@string/error"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/outline"
+                    app:hintTextAppearance="@style/HintTextStyle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEmailMasuk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:hint="@string/alamat_email"
+                        android:textColor="@color/text"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:textCursorDrawable="@drawable/bg_cursor"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/outline"
+                    app:hintTextAppearance="@style/HintTextStyle"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPasswordMasuk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:inputType="textPassword|textNoSuggestions"
+                        android:lines="1"
+                        android:hint="@string/password"
+                        android:textColor="@color/text"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:textCursorDrawable="@drawable/bg_cursor"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnMasuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/bordirbutton"
+                    android:text="@string/masuk"
+                    android:textColor="@color/putih"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPunyaAkunMasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:text="@string/sudah_punya_akun"
+                android:textColor="@color/text"/>
+
+            <TextView
+                android:id="@+id/txtMasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/masuk"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

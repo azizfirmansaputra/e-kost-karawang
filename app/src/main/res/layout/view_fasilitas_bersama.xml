@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/fasilitas_bersama"
+        android:textSize="15sp"
+        android:textColor="@color/text"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_wifi"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/wifi"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasCCTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_cctv"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/cctv"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasJemuran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_jemuran"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/jemuran"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasLaundry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_laundry"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/laundry"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasParkirMotor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_parkir_motor"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/parkir_motor"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasParkirMobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_parkir_mobil"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/parkir_mobil"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasSumberAirTanah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_sumber_air_tanah"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/sumber_air_tanah"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasSumberAirPam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_sumber_air_pam"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/sumber_air_pam"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasRuangBersama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_ruang_bersama"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/ruang_bersama"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasDapur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_dapur"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/dapur_atau_pantry"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasTelevisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_televisi"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/televisi"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasKulkas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_kulkas"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/kulkas"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasKeamanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_keamanan"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/keamanan"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasDispenser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_dispenser"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/dispenser"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasKamarMandiDalam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_kamar_mandi"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/kamar_mandi_dalam"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasKamarMandiLuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_kamar_mandi"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/kamar_mandi_luar"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasToiletJongkok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_toilet_duduk"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/toilet_jongkok"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasToiletDuduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_toilet_duduk"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/toilet_duduk"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasKamarMandiBak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_kamar_mandi_bak"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/kamar_mandi_bak"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasKamarMandiShower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_kamar_mandi_shower"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/kamar_mandi_shower"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasKamarAC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_kamar_ac"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/kamar_ac"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasTermasukListrik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_termasuk_listrik"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/termasuk_listrik"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CBFasilitasLemari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_lemari"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/lemari"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/CBFasilitasTempatTidur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/fasilitas_tempat_tidur"
+            android:buttonTint="@color/color_checkbox"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/tempat_tidur"
+            android:textSize="15sp"
+            android:textColor="@color/color_checkbox"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "717224058582",
+    "firebase_url": "https://e-kost-karawang-default-rtdb.firebaseio.com",
+    "project_id": "e-kost-karawang",
+    "storage_bucket": "e-kost-karawang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717224058582:android:975faf2a23fd57618fb377",
+        "android_client_info": {
+          "package_name": "com.aplikasi_ekostkarawang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717224058582-900rhj24lga6hc6rd7aud8tg1qng57rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aplikasi_ekostkarawang",
+            "certificate_hash": "e120e09f41987f5138841d23e1528d8f92a3419d"
+          }
+        },
+        {
+          "client_id": "717224058582-v3n0frfreko0kdh2b8e8ormpd2k71gfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBetrrPiHJWvE112zLYDHc-ibM33NQwKd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717224058582-v3n0frfreko0kdh2b8e8ormpd2k71gfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

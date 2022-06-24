@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarVerifikasiAkun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/Verifikasi_Akun"
+                android:textSize="18sp"
+                android:textColor="@color/putih"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/lengkapi_data_diri_anda_berikut"
+        android:textColor="@color/textTebal"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/unggah_foto_kartu_identitas"
+                android:textSize="15sp"
+                android:textColor="@color/text"/>
+
+            <ImageView
+                android:id="@+id/imgFotoKTP"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"/>
+
+            <Button
+                android:id="@+id/btnAmbilFotoKTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/bordiroutline"
+                android:drawableStart="@drawable/icon_camera"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/colorPrimary"
+                android:text="@string/ambil_foto"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/unggah_foto_diri"
+                android:textSize="15sp"
+                android:textColor="@color/text"/>
+
+            <ImageView
+                android:id="@+id/imgFotoDiri"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"/>
+
+            <Button
+                android:id="@+id/btnAmbilFotoDiri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/bordiroutline"
+                android:drawableStart="@drawable/icon_camera"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/colorPrimary"
+                android:text="@string/ambil_foto"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/petunjuk_dalam_unggah_foto"
+                android:textSize="15sp"
+                android:textColor="@color/text"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/list_petunjuk"
+                android:textSize="15sp"
+                android:textColor="@color/text"
+                android:textStyle="normal"
+                android:justificationMode="inter_word"
+                tools:targetApi="o"/>
+
+            <CheckBox
+                android:id="@+id/CBUnggahDataDiri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/dengan_ini_saya_menyatakan_bahwa_data_diri_yang_saya_berikan_adalah_benar"
+                android:textSize="15sp"
+                android:textColor="@color/textTebal"
+                android:textStyle="bold"
+                android:justificationMode="inter_word"
+                tools:targetApi="o"/>
+
+            <Button
+                android:id="@+id/btnUnggahDataDiri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bordirbutton"
+                android:text="@string/unggah_data_diri"
+                android:textColor="@color/putih"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
